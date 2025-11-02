@@ -1,6 +1,7 @@
-package com.example.productsShoppping.entity.entity;
+package com.example.productShopping.entity;
 
 
+import com.example.productShopping.entity.User;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -47,6 +48,5 @@ public class Product {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     @JsonBackReference
-    private com.example.productsShoppping.entity.entity.User user;
-
+    private User user;
 }

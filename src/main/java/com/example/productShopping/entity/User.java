@@ -1,4 +1,4 @@
-package com.example.productsShoppping.entity.entity;
+package com.example.productShopping.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
